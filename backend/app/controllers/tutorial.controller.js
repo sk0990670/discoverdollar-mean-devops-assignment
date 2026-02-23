@@ -74,7 +74,8 @@ exports.update = (req, res) => {
 
   const id = req.params.id;
 
-  Tutorial.findByIdAndUpdate(id, req.body, { useFindAndModify: false })
+  // { new: true } returns the updated document; useFindAndModify is removed in Mongoose 6+
+  Tutorial.findByIdAndUpdate(id, req.body, { new: true })
     .then(data => {
       if (!data) {
         res.status(404).send({
@@ -93,7 +94,8 @@ exports.update = (req, res) => {
 exports.delete = (req, res) => {
   const id = req.params.id;
 
-  Tutorial.findByIdAndRemove(id, { useFindAndModify: false })
+  // findByIdAndRemove is deprecated — use findByIdAndDelete
+  Tutorial.findByIdAndDelete(id)
     .then(data => {
       if (!data) {
         res.status(404).send({
