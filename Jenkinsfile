@@ -33,7 +33,7 @@ pipeline {
                 }
             }
         }
-        stage('Deploy to VM') {
+        stage('Docker Deploy') {
             steps {
                 script {
                     sh 'docker-compose pull' // Pull latest images
