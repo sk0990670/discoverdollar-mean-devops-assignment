@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  # 1. MongoDB Database Setup
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  # 2. Node.js Backend Setup
+  backend:
+    build: ./backend
+    image: solosahej/discoverdollar-backend:latest
+    container_name: backend
+    restart: always
+    environment:
+      # Yahan hum direct 'mongodb' service ka naam use kar rahe hain connect karne ke liye
+      - MONGODB_URI=mongodb://mongodb:27017/mean_db
+      - PORT=8081
+    ports:
+      - "8081:8081"
+    depends_on:
+      - mongodb
+
+  # 3. Angular Frontend Setup (with Nginx)
+  frontend:
+    build: ./frontend
+    image: solosahej/discoverdollar-frontend:latest
+    container_name: frontend
+    restart: always
+    ports:
+      # Host ka port 80 container ke port 80 se map kar rahe hain
+      - "80:80"
+    depends_on:
+      - backend
+
+# Database ka data save rakhne ke liye volume
+volumes:
+  mongo-data:
