@@ -176,13 +176,18 @@ No port needed — Nginx serves everything on port 80.
  — Docker Hub showing pushed `discoverdollar-backend` and `discoverdollar-frontend` repositories
 
 ### 3. Application Deployment and Working UI
-> <img width="2159" height="1299" alt="image" src="https://github.com/user-attachments/assets/d44acdd9-0f8a-4d8f-be2b-7c0eecd372d5" />
+> <img width="2159" height="1030" alt="image" src="https://github.com/user-attachments/assets/ffb5ade7-1ba7-452a-9780-0491cb2920e2" />
  — Browser showing the Angular frontend loaded via the VM's public IP
 
 ### 4. Running Containers (Nginx on Port 80)
 > <img width="1719" height="355" alt="image" src="https://github.com/user-attachments/assets/529f39e1-39fc-45ad-a623-cda86083692e" />
 
  — VM terminal output of `docker ps` showing 3 running containers with `0.0.0.0:80->80/tcp`
+
+### 5. Check Live Running Application 
+```
+http://64.227.130.255/
+```
 
 ---
 
