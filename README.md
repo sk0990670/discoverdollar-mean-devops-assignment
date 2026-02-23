@@ -180,7 +180,8 @@ No port needed — Nginx serves everything on port 80.
  — Browser showing the Angular frontend loaded via the VM's public IP
 
 ### 4. Running Containers (Nginx on Port 80)
-> <img width="2159" height="835" alt="image" src="https://github.com/user-attachments/assets/066237d6-c26c-4859-a881-9333baedb6d0" />
+> <img width="1719" height="355" alt="image" src="https://github.com/user-attachments/assets/529f39e1-39fc-45ad-a623-cda86083692e" />
+
  — VM terminal output of `docker ps` showing 3 running containers with `0.0.0.0:80->80/tcp`
 
 ---
