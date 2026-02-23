@@ -168,16 +168,20 @@ No port needed — Nginx serves everything on port 80.
 ## 📸 Assignment Deliverables & Screenshots
 
 ### 1. CI/CD Configuration and Execution
-> **[Insert Screenshot]** — Jenkins Dashboard showing successful stages: *Git Checkout → Docker Build → Docker Push → Docker Deploy*
+><img width="2159" height="1163" alt="image" src="https://github.com/user-attachments/assets/2e6616d0-fafe-4ebe-aaec-c064a1f2a0da" />
+* — Jenkins Dashboard showing successful stages: *Git Checkout → Docker Build → Docker Push → Docker Deploy*
 
 ### 2. Docker Image Build and Push
-> **[Insert Screenshot]** — Docker Hub showing pushed `discoverdollar-backend` and `discoverdollar-frontend` repositories
+><img width="2159" height="1161" alt="image" src="https://github.com/user-attachments/assets/e1034c25-6469-4b5c-82bc-05c4f3ca8fdc" />
+ — Docker Hub showing pushed `discoverdollar-backend` and `discoverdollar-frontend` repositories
 
 ### 3. Application Deployment and Working UI
-> **[Insert Screenshot]** — Browser showing the Angular frontend loaded via the VM's public IP
+> <img width="2159" height="1299" alt="image" src="https://github.com/user-attachments/assets/d44acdd9-0f8a-4d8f-be2b-7c0eecd372d5" />
+ — Browser showing the Angular frontend loaded via the VM's public IP
 
 ### 4. Running Containers (Nginx on Port 80)
-> **[Insert Screenshot]** — VM terminal output of `docker ps` showing 3 running containers with `0.0.0.0:80->80/tcp`
+> <img width="2159" height="835" alt="image" src="https://github.com/user-attachments/assets/066237d6-c26c-4859-a881-9333baedb6d0" />
+ — VM terminal output of `docker ps` showing 3 running containers with `0.0.0.0:80->80/tcp`
 
 ---
 
@@ -193,3 +197,11 @@ No port needed — Nginx serves everything on port 80.
 | PUT | /api/tutorials/:id | Update tutorial |
 | DELETE | /api/tutorials/:id | Delete tutorial |
 | DELETE | /api/tutorials | Delete all tutorials |
+
+## 📝 Detailed Documentation (Notion)
+
+For a comprehensive, step-by-step guide detailing everything from Jenkins installation to the final application deployment, please refer to my complete Notion documentation below:
+
+🔗 **[Discover Dollar DevOps Assignment - Complete Setup Guide](https://www.notion.so/Discover-Dollar-DevOps-Engineer-Internship-Assignment-3103356021ee806ea6e5ef4fdea00c5f?source=copy_link)**
+
+---
