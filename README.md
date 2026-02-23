@@ -197,3 +197,11 @@ No port needed — Nginx serves everything on port 80.
 | PUT | /api/tutorials/:id | Update tutorial |
 | DELETE | /api/tutorials/:id | Delete tutorial |
 | DELETE | /api/tutorials | Delete all tutorials |
+
+## 📝 Detailed Documentation (Notion)
+
+For a comprehensive, step-by-step guide detailing everything from Jenkins installation to the final application deployment, please refer to my complete Notion documentation below:
+
+🔗 **[Discover Dollar DevOps Assignment - Complete Setup Guide](https://www.notion.so/Discover-Dollar-DevOps-Engineer-Internship-Assignment-3103356021ee806ea6e5ef4fdea00c5f?source=copy_link)**
+
+---
